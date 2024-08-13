@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: webapp-deployment
 spec:
-  replicas: 1 # default replica count
+  replicas: 3 # default replica count
   selector:
     matchLabels:
       app: myapp
@@ -15,7 +15,6 @@ spec:
       containers:
       - name: webapp-container
         image: derchrischkya/hello_world_webserver:latest
-        platform: linux/x86_64
         resources:
           limits:
             cpu: "500m"
