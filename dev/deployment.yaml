@@ -15,7 +15,7 @@ spec:
       containers:
       - name: webapp-container
         image: derchrischkya/hello_world_webserver:latest
-        platform: linux/amd64
+        platform: linux/x86_64
         resources:
           limits:
             cpu: "500m"
